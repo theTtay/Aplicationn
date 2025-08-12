@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aplicationn.Pagina6"
+             Title="Pagina6">
+    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <VerticalStackLayout Spacing="2" Margin="0, 0, 0, 20">
+            <Label 
+                Text="CONVERSOR DE DINERO"
+                FontFamily="Cambria"
+                FontAttributes="Bold"
+                FontSize="Large"
+                HorizontalOptions="Center" />
+
+            <Label Text="De dólar estadounidense a peso mexicano"
+                    FontFamily="Cambria"
+                    FontAttributes="Italic"
+                    FontSize="Medium"
+                    HorizontalOptions="Center" ></Label>
+        </VerticalStackLayout>
+
+        <Frame>
+            <VerticalStackLayout Spacing="7" HorizontalOptions="Center">
+                <HorizontalStackLayout Spacing="10">
+                    <Frame WidthRequest="250">
+                        <VerticalStackLayout Spacing="5">
+                            <Label Text="Cantidad en Dólar Estadounidense:"
+                                    FontFamily="Cambria"
+                                    FontSize="Micro"
+                                    HorizontalOptions="Center" ></Label>
+                            <Entry x:Name="Uno"
+                                   Placeholder="$USD"
+                                   Keyboard="Numeric"
+                                   FontFamily="Cambria"
+                                   FontSize="Micro">
+                                <Entry.Shadow>
+                                    <Shadow Brush="Red"
+                                        Offset="10,10"
+                                        Radius="20"
+                                        Opacity="0.8" />
+                                </Entry.Shadow>
+                            </Entry>
+                        </VerticalStackLayout>
+                    </Frame>
+
+                    <Frame WidthRequest="250">
+                        <VerticalStackLayout Spacing="5">
+                            <Label Text="Cantidad en Peso Méxicano:"
+                                   FontFamily="Cambria"
+                                   FontSize="Micro"
+                                   HorizontalOptions="Center" ></Label>
+                            <Line></Line>
+                            <Line></Line>
+                            <Line></Line>
+                            <Line></Line>
+                            <Entry x:Name="Dos"
+                                   Placeholder="$MXC"
+                                   Keyboard="Numeric"
+                                   FontFamily="Cambria"
+                                   TextColor="Black"
+                                   FontSize="Micro"
+                                   IsEnabled="False">
+                                <Entry.Shadow>
+                                    <Shadow Brush="Green"
+                                    Offset="10,10"
+                                    Radius="20"
+                                    Opacity="0.8" />
+                                </Entry.Shadow>
+                            </Entry>
+                        </VerticalStackLayout>
+                    </Frame>
+                </HorizontalStackLayout>
+                <Line></Line>
+                <Button Text="Calcular"
+                        FontFamily="Cambria"
+                        FontSize="Micro"
+                        WidthRequest="130"
+                        CornerRadius="10"
+                        Clicked="Button_Clicked"></Button>
+            </VerticalStackLayout>
+        </Frame>
+
+    </VerticalStackLayout>
+</ContentPage>

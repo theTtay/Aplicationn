@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Aplicationn"
+             x:Class="Aplicationn.MainPage">
+
+        <local:Pagina1 Title="Página 1" />
+
+        <local:Pagina2 Title="Página 2" />
+
+        <local:Pagina3 Title="Página 3" />
+
+        <local:Pagina4 Title="Página 4" />
+
+        <local:Pagina5 Title="Página 5" />
+
+        <local:Pagina6 Title="Conversor" />
+    
+
+</TabbedPage>
