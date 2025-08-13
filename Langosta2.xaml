@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Exercise5.Langosta2">
+    
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label Text="SISTEMA DE PEDIDOS" FontSize="22" TextColor="Black"
+                   FontAttributes="Italic" HorizontalOptions="Center" Margin="0,10"/>
+
+            <Button Text="Regresar"
+                            Background="#89AC76"
+                            WidthRequest="130"
+                            HeightRequest="30"
+                            HorizontalOptions="Start"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            FontSize="18"
+                            Clicked="Button_Clicked_1"/>
+
+            <Frame BackgroundColor="Transparent"
+                 BorderColor="Black"
+                 CornerRadius="10"
+                 Padding="30"
+                 Margin="0,20">
+                
+                <StackLayout>
+                    <Label Text="Selecciona cuantos platillos: "
+                         HorizontalOptions="Start"
+                         TextColor="Black"
+                         FontSize="20"
+                         FontAttributes="Bold"/>
+
+                    <Picker x:Name="Pickerr"
+                            SelectedIndexChanged="Picker_SelectedIndexChanged">
+                    </Picker>
+
+
+                    <BoxView HeightRequest="25" Color="Transparent"/>
+                    
+                    <Entry x:Name="Seleccion"
+                           IsReadOnly="True"
+                           FontSize="18"
+                           Placeholder="Seleccion"/>
+
+                    <BoxView HeightRequest="25" Color="Transparent"/>
+
+                    <Button Text="🛒 HACER PEDIDO"
+                            Background="#89AC76"
+                            WidthRequest="200"
+                            HeightRequest="50"
+                            HorizontalOptions="Center"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            FontSize="18"
+                            Clicked="Button_Clicked"/>
+
+                    <Entry x:Name="TotalL"
+                           IsReadOnly="True"
+                           FontSize="18"
+                           Placeholder="total a pagar"
+                           Margin="0,20"/>
+
+                </StackLayout>
+            </Frame>
+            
+            
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
