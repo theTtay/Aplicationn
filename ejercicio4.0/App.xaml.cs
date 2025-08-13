@@ -1,4 +1,4 @@
-﻿namespace Aplicationn
+﻿namespace ejercicio4._0
 {
     public partial class App : Application
     {
@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NewPage1();
         }
     }
 }

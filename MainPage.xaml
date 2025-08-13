@@ -4,15 +4,15 @@
              xmlns:local="clr-namespace:Aplicationn"
              x:Class="Aplicationn.MainPage">
 
-        <local:Pagina1 Title="Página 1" />
+        <local:Pagina6 Title="Página 1" />
 
-        <local:Pagina2 Title="Página 2" />
+        <local:Pagina6 Title="Página 2" />
 
-        <local:Pagina3 Title="Página 3" />
+        <local:Pagina6 Title="Página 3" />
 
-        <local:Pagina4 Title="Página 4" />
+        <local:Pagina6 Title="Página 4" />
 
-        <local:Pagina5 Title="Página 5" />
+        <local:Langosta Title="Página 5" />
 
         <local:Pagina6 Title="Conversor" />
     

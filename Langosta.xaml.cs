@@ -1,4 +1,4 @@
-namespace Exercise5;
+namespace Aplicationn;
 
 public partial class Langosta : ContentPage
 {
